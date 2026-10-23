@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0d0d0d">
+<meta name="description" content="MORROW Founder & Compliance AI Prompt Library — seven guided diagnostics for business structure, incorporation, compliance and corporate changes.">
+<title>MORROW Prompt Library</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="noise"></div>
+<header class="site-header" id="top">
+  <a class="brand brand-word" href="#top" aria-label="MORROW Prompt Library home">MORROW</a>
+  <nav class="desktop-nav" aria-label="Primary navigation">
+    <a href="#library">Browse</a>
+    <a href="#how">How it works</a>
+    <a href="#about">About</a>
+  </nav>
+  <div class="header-actions">
+    <label class="search-shell" aria-label="Search prompts">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m21 21-4.35-4.35m2.35-5.65a8 8 0 1 1-16 0 8 8 0 0 1 16 0Z"/></svg>
+      <input id="searchInput" type="search" placeholder="Search prompts" autocomplete="off">
+    </label>
+    <a class="proposal-link" href="services.html">Services & fees</a>
+  </div>
+</header>
+
+<main>
+<section class="hero" aria-labelledby="heroTitle">
+  <div class="hero-backdrop"></div>
+  <div class="hero-content">
+    <div class="eyebrow"><span class="red-dot"></span> MORROW AI PROMPT LIBRARY</div>
+    <h1 id="heroTitle">Before you file,<br><em>ask better questions.</em></h1>
+    <p class="hero-copy">Seven guided AI diagnostics for founders, directors and partners. Each tool asks seven simple questions first—then builds a structured blueprint you can actually use.</p>
+    <div class="hero-badges"><span>7 guided tools</span><span>7 questions each</span><span>1-click copy</span></div>
+    <div class="hero-cta">
+      <button class="btn btn-primary" data-open="structure"><span class="play">▶</span> Open featured tool</button>
+      <button class="btn btn-secondary" id="startHereBtn">Start here</button>
+    </div>
+    <p class="hero-note">Works with ChatGPT, Claude, Gemini and other capable AI assistants.</p>
+  </div>
+  <div class="hero-art" aria-hidden="true">
+    <div class="hero-card hc-1"><span>STRUCTURE</span><strong>01</strong></div>
+    <div class="hero-card hc-2"><span>ROC</span><strong>04</strong></div>
+    <div class="hero-card hc-3"><span>RESET</span><strong>06</strong></div>
+    <div class="hero-orbit"></div>
+  </div>
+</section>
+
+<section class="intro-strip" id="how">
+  <div class="intro-item"><b>1</b><span><strong>Choose a tool</strong><small>Pick the question you need to answer.</small></span></div>
+  <div class="intro-item"><b>2</b><span><strong>Copy once</strong><small>The whole diagnostic goes to your AI assistant.</small></span></div>
+  <div class="intro-item"><b>3</b><span><strong>Answer 7 questions</strong><small>One at a time, with simple options.</small></span></div>
+  <div class="intro-item"><b>4</b><span><strong>Get the blueprint</strong><small>Next steps, documents, risks and handoff brief.</small></span></div>
+</section>
+
+<section class="library" id="library">
+  <div class="section-head">
+    <div><span class="kicker">EXPLORE</span><h2>Your corporate toolkit</h2></div>
+    <div class="filters" id="filters">
+      <button class="filter active" data-filter="all">All</button>
+      <button class="filter" data-filter="Starting a business">Starting</button>
+      <button class="filter" data-filter="Newly incorporated">Newly incorporated</button>
+      <button class="filter" data-filter="Existing entity">Existing entity</button>
+      <button class="filter" data-filter="Special entities">Special entities</button>
+    </div>
+  </div>
+  <div id="searchEmpty" class="search-empty" hidden>No prompt matches that search.</div>
+  <div id="rows"></div>
+</section>
+
+<section class="start-block">
+  <div class="start-copy"><span class="kicker">NOT SURE WHERE TO BEGIN?</span><h2>Tell us where the entity is today.</h2><p>Answer a few quick questions and we’ll route you to the most useful diagnostic—without asking you to understand legal terminology first.</p></div>
+  <button class="btn btn-primary btn-large" id="startHereBtn2">Find my prompt</button>
+</section>
+
+<section class="about" id="about">
+  <div class="about-main"><span class="kicker">WHY THIS EXISTS</span><h2>Use AI to organise the problem—<br>not to pretend the law is simple.</h2><p>These prompts are planning tools. They force the AI to ask for facts before answering, separate assumptions from verified requirements, and flag statutory points that need current professional verification.</p></div>
+  <div class="about-points">
+    <div><span>01</span><b>No generic checklist first</b><p>The interview comes before the blueprint.</p></div>
+    <div><span>02</span><b>Uncertainty is allowed</b><p>“Not sure” stays visible instead of being guessed away.</p></div>
+    <div><span>03</span><b>Built for handoff</b><p>Every tool ends with a professional briefing note.</p></div>
+  </div>
+</section>
+
+<section class="professional-cta">
+  <div><span class="kicker">PREFER PROFESSIONAL EXECUTION?</span><h2>Understand the requirement yourself.<br>Or have MORROW handle the scope.</h2><p>The prompt library is free to use. If you would rather delegate the company-secretarial work, our service guide sets out scopes, limits and professional fees.</p></div>
+  <a class="btn btn-light btn-large" href="services.html">View MORROW services & fees</a>
+</section>
+</main>
+
+<footer>
+  <div class="footer-wordmark">MORROW</div>
+  <p>Founder & Compliance AI Prompt Library</p>
+  <p class="disclaimer">Planning tools only. Not legal, tax, accounting, audit, FEMA, securities or sector-regulatory advice. AI systems can be wrong or outdated; verify material statutory requirements with authoritative sources and the appropriate qualified professional before acting.</p>
+</footer>
+
+<div class="modal" id="promptModal" aria-hidden="true">
+  <div class="modal-backdrop" data-close></div>
+  <article class="prompt-modal-panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <button class="icon-close" data-close aria-label="Close">×</button>
+    <div class="modal-poster" id="modalPoster"><div class="modal-num" id="modalNum"></div><div class="modal-word" id="modalWord"></div></div>
+    <div class="modal-content">
+      <div class="modal-meta"><span id="modalStage"></span><span>7-question guided diagnostic</span></div>
+      <h2 id="modalTitle"></h2>
+      <p class="modal-subtitle" id="modalSubtitle"></p>
+      <div class="modal-actions">
+        <button class="btn btn-primary" id="copyPromptBtn">Copy full prompt</button>
+        <button class="btn btn-secondary" id="togglePromptBtn">Read full prompt</button>
+      </div>
+      <div class="quick-grid"><div><small>BEST USED WHEN</small><p id="modalBest"></p></div><div><small>WHAT YOU GET</small><p id="modalOut"></p></div></div>
+      <div class="prompt-wrap" id="promptWrap" hidden><div class="prompt-toolbar"><span>FULL COPY-PASTE PROMPT</span><button id="copyPromptBtn2">Copy</button></div><pre id="modalPrompt"></pre></div>
+      <div class="modal-foot"><p>Paste the whole prompt into your AI assistant. If it skips the interview, tell it: <em>“Please follow the interview rules and ask Question 1 first.”</em></p></div>
+    </div>
+  </article>
+</div>
+
+<div class="modal" id="routerModal" aria-hidden="true">
+  <div class="modal-backdrop" data-router-close></div>
+  <article class="router-panel" role="dialog" aria-modal="true" aria-labelledby="routerTitle">
+    <button class="icon-close" data-router-close aria-label="Close">×</button>
+    <span class="kicker">START HERE</span><h2 id="routerTitle">What are you trying to work out?</h2>
+    <div id="routerBody"></div>
+  </article>
+</div>
+
+<div class="toast" id="toast">Prompt copied</div>
+<script src="prompts/01.js"></script>
+<script src="prompts/02.js"></script>
+<script src="prompts/03.js"></script>
+<script src="prompts/04.js"></script>
+<script src="prompts/05.js"></script>
+<script src="prompts/06.js"></script>
+<script src="prompts/07.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
